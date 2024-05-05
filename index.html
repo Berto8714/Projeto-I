@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Projeto I</title>
+
+
+  <style>
+    body{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      
+      align-items: center;
+      flex-direction: column;
+      background-color:hsl(30, 54%, 90%)
+        }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  
+    img{ 
+      width: 400px;
+      height: 200px;
+      position: relative;
+      left: 50px;
+      top:20px;
+      border-radius: 10%;
+       }
+    .branco{
+      width: 500px;
+      height: 2000px;
+      background-color: white;
+      border-radius: 3%;
+      display: flex;
+      justify-content: top;
+      flex-direction: column;
+      margin: 3px;
+           }
+
+      .titulo1{
+        display: flex;
+        justify-content:start;
+        margin: 5px 50px;
+        flex-direction: column;
+              }
+      .titulo1 p{
+        display: flex;
+        justify-content:start;
+        position: relative;
+        top: -20px;
+                }
+      .time{
+        height:130px;
+        width:400px ;
+        margin:0px 50px;
+        border-radius: 5%;
+        background-color:hsl(330, 100%, 98%)
+            }
+      .time p{
+        margin:0px;
+        color:hsl(332, 51%, 32%)
+             }
+      .time li::marker{
+        color:hsl(332, 51%, 32%) ;
+                      }
+      .time li{
+        margin: 10px;
+              }
+      .ingredientes{
+        display: flex;
+        justify-content:start;
+        margin: 0px 40px;
+        flex-direction: column;
+                    }
+      .ingredientes h1{
+        margin: 5px 10px;
+        color:hsl(14, 45%, 36%) ;
+                      }
+      .ingredientes li::marker{
+        color:hsl(332, 51%, 32%) ;
+                              } 
+      .ingredientes li{
+        margin:10px 0px;
+        justify-content: start;
+        flex-direction: column;
+                      }
+      .intruções h1{
+        margin: 0px 50px;
+        color:hsl(14, 45%, 36%) ;
+                   }
+      .intruções li::marker{
+        color:hsl(332, 51%, 32%) ;
+                           }
+      .intruções li{
+        margin:10px 40px;
+                   }
+      .negrito{
+        font-weight: bold;
+              }
+      .nutrição h1{
+        margin: 0px 50px;
+        color:hsl(14, 45%, 36%) ;
+                  }
+      .nutrição p{
+        margin: 10px 50px;
+                 }
+      .tabela{
+        margin:30px 50px;
+        width: 400px; 
+             }
+      .direita{
+        color:hsl(14, 45%, 36%) ;
+        padding: 10px;
+              }  
+  </style>
+</head>
+<body>
+  <div class="branco">
+    <div class="imagem">
+    <img src="assets/images/image-omelette.jpeg" alt="">
+  </div>
+  <div class="titulo1">
+    <h1>Simple Omelette Recipe</h1>
+    <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+      to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+  </div>
+  <div class="time">
+    <p>Preparation time</p>
+    <ul>
+      <li><span class="negrito">Total:</span> Approximately 10 minutes</li>
+      <li><span class="negrito">Preparation:</span> 5 minutes</li>
+      <li><span class="negrito">Cooking:</span> 5 minutes</li>
+    </ul>
+  </div>
+  <div class="ingredientes">
+    <h1>Ingredients</h1>
+    <ul>
+      <li>2-3 large eggs</li>
+      <li>Salt, to taste</li>
+      <li>Pepper, to taste</li>
+      <li>1 tablespoon of butter or oil</li>
+      <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+    </ul>
+  </div>
+  <div class="intruções">
+    <h1>Instructions</h1>
+    <ul>
+      <li><span class="negrito">Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+        You can add a tablespoon of water or milk for a fluffier texture.
+      </li>
+      <li><span class="negrito">Heat the pan:</span> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+      <li><span class="negrito">Cook the omelette:</span> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+        the eggs evenly coat the surface.</li>
+      <li> <span class="negrito">Add fillings (optional):</span> When the eggs begin to set at the edges but are still slightly runny in the 
+        middle, sprinkle your chosen fillings over one half of the omelette.
+      </li>
+      <li> <span class="negrito">Fold and serve:</span> As the omelette continues to cook, carefully lift one edge and fold it over the 
+        fillings. Let it cook for another minute, then slide it onto a plate.</li>
+      <li><span class="negrito">Enjoy: </span>Serve hot, with additional salt and pepper if needed.</li>
+    </ul>
+   </div>
+    <div class="nutrição">
+      <h1>Nutrition</h1>
+      <p>The table below shows nutritional values per serving without the additional fillings.
+      <table class="tabela">
+        <tr>
+            <th>Calories:</th>
+            <th class="direita">277Kcal</th>
+          </tr>
+          <tr>
+            <th>Carbs:</th>
+            <th class="direita">0g</th>
+          </tr>
+          <tr>
+            <th>Protein:</th>
+            <th class="direita">20g</th>
+          </tr>
+          <tr>
+            <th>Fat:</th>
+            <th class="direita">24g</th>
+        </tr>
+       </table>
+
+    </div>
+  </div>
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Humberto Barreto</a>.
+  </div>
+</body>
+</html>
